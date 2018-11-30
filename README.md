@@ -35,3 +35,9 @@ if (der.equals("S") && _S_to_L.contains(str)) {
   parseString.push("L");
 }
 ```
+
+### Usage
+```
+javac GrammarParser.java
+java GrammarParser uid.txt
+```
