@@ -1,4 +1,4 @@
-# Grammar-Parser
+# LL1 Parser
 
 ### Grammar:
 ```
