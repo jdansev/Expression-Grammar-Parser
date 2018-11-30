@@ -1,4 +1,4 @@
-# LL(1) Table-Driven Parser
+# LL1 Table-Driven Parser
 
 ### Grammar:
 ```
