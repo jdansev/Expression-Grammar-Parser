@@ -1,33 +1,22 @@
 # Grammar-Parser
 
-
-### Grammar G:
+### Grammar:
 ```
 S → L
 L → IX
-X → L
-X → ε
-I → A
-I → C
-I → W
+X → L | ε
+I → A | C | W
 A → uid := E ;
 C → if E then L O fi
-O → else L
-O → ε
+O → else L | ε
 W → while E do L done
 E → E2 Y
-Y → Op1 E2 Y
-Y → ε
+Y → Op1 E2 Y | ε
 E2 → T Z
-Z → Op2 E2
-Z → ε
-T → c
-T → uid
-Op1 → <
-Op1 → =
-Op1 → !=
-Op2 → +
-Op2 → -
+Z → Op2 E2 | ε
+T → c | uid
+Op1 → < | = | !=
+Op2 → + | -
 ```
 
 ### First and Follow Sets:
@@ -51,7 +40,7 @@ FIRST(Op2) = {+, -}
 
 ### Adding or Modifying Rules
 
-  To make the modification or addition of grammar rules more simple, a list of static String arrays are declared at the top of the class to store the values for a rule’s first and follow sets. The following code refers to the rule for the start symbol S → L.
+To make the modification or addition of grammar rules more simple, a list of static String arrays are declared at the top of the class to store the values for a rule’s first and follow sets. The following code refers to the rule for the start symbol S → L.
 ```
 // S -> L for {uid, if, while}
 static List<String> _S_to_L = Arrays.asList("uid", "if", "while");
