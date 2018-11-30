@@ -39,5 +39,5 @@ if (der.equals("S") && _S_to_L.contains(str)) {
 ### Usage
 ```
 javac LL1Parser.java
-java LL1Parser uid.txt
+java LL1Parser sample.txt
 ```
