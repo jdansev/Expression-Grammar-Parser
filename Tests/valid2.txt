@@ -1,0 +1,15 @@
+while c < uid do
+  while uid < c + uid do
+    if uid = uid + c then
+      uid := c;
+    else
+      uid := c + uid;
+    fi
+  done
+done
+
+
+
+
+
+

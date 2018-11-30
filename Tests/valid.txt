@@ -1,0 +1,6 @@
+if uid < c then
+  if uid = uid then
+    uid := uid;
+    uid := c + uid;
+  fi
+fi

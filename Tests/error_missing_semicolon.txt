@@ -1,0 +1,3 @@
+if uid < c then
+    uid := c
+fi
