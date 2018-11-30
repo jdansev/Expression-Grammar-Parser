@@ -38,6 +38,6 @@ if (der.equals("S") && _S_to_L.contains(str)) {
 
 ### Usage
 ```
-javac GrammarParser.java
-java GrammarParser uid.txt
+javac LL1Parser.java
+java LL1Parser uid.txt
 ```
