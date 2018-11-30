@@ -56,10 +56,12 @@ FIRST(Op2) = {+, -}
 // S -> L for {uid, if, while}
 static List<String> _S_to_L = Arrays.asList("uid", "if", "while");
 ```
-Once the first and follow sets are updated, the corresponding if statement in the parse method should also be updated with the variable for the rule, as well as the string of variables and terminals to push onto the derivation stack.
 
+Once the first and follow sets are updated, the corresponding if statement in the parse method should also be updated with the variable for the rule, as well as the string of variables and terminals to push onto the derivation stack.
 ```
 // S -> L for {uid, if, while}
 if (der.equals("S") && _S_to_L.contains(str)) {
+  parseString.pop();
+  parseString.push("L");
 }
 ```
